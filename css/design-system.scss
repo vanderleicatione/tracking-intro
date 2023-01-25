@@ -1,0 +1,35 @@
+//Spacing
+$spacing: 8px;
+$max-width: 1264px;
+
+//Colors
+$color-primary: hsl(0, 100%, 68%);
+$color-blue: hsl(230, 29%, 20%);
+$color-dark-grayish: hsl(230, 11%, 40%);
+$color-light-blue: hsl(231, 7%, 65%);
+$color-white: hsl(207, 33%, 95%);
+
+//Fonts
+$font-primary: 'Barlow Condensed', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+$font-secondary: 'Barlow';
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+//Weights
+$w-normal: 400;
+$w-bold: 700;
+
+h1,li,.button{
+    font-family: $font-primary;
+}
+h1,li{
+    font-weight: $w-bold;
+}
+
+span,p{
+    font-family: $font-secondary;
+    font-weight: $w-normal;
+}
+
+

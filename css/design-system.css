@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+h1, li, .button {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+h1, li {
+  font-weight: 700;
+}
+
+span, p {
+  font-family: "Barlow";
+  font-weight: 400;
+}/*# sourceMappingURL=design-system.css.map */

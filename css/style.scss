@@ -1,0 +1,139 @@
+@import 'design-system.scss';
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+    // background-image: url("/images/illustration-devices.svg");
+    // background-repeat: no-repeat;
+    // background-position: 50vw -80%;
+}
+
+
+/* Header */
+
+header {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing*5 $spacing*2;
+
+    nav {
+        margin-left: $spacing*2;
+        flex: 1;
+        max-width: 50%;
+
+        ul {
+            margin-left: auto;
+            max-width: $spacing*55;
+            font-size: 18px;
+            padding: 0 $spacing*2;
+            display: flex;
+            justify-content: space-between;
+
+            li a {
+                transition: all ease-in-out .3s;
+                color: $color-blue;
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+
+            li:nth-last-child(-n + 2) a {
+                color: $color-dark-grayish;
+
+                &:hover{
+                    color: $color-blue;
+                }
+            }
+
+            li.ball{
+                font-size: 36px;
+                line-height: 50%;
+            }
+        }
+    }
+}
+
+/* Content */
+
+.container{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $spacing*5 0 $spacing*5 $spacing*2;
+    display: flex;
+    justify-content: space-between;
+    //overflow: hidden;
+
+    .content{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: $spacing*3;
+        .title{
+            text-transform: uppercase;
+            span{
+                display: flex;
+                align-items: center;
+                gap: $spacing;
+                color: $color-dark-grayish;
+                strong{
+                    display: block;
+                    font-size: 12px;
+                    color: $color-white;
+                    background-color: $color-blue;
+                    padding: $spacing $spacing;
+                    border-radius: $spacing;
+                }
+
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin-bottom: $spacing;
+            }
+
+            color: $color-blue;
+            max-width: 400px;
+            font-size: 36px;
+        }
+
+        .text{
+            max-width: 250px;
+            line-height: 21px;
+        }
+
+        .shchedule-button{
+            display: flex;
+            gap: $spacing*2;
+            align-items: center;
+            text-transform: uppercase;
+            .button{
+                font-weight: $w-bold;
+                color: $color-white;
+                background-color: $color-primary;
+                padding: $spacing*1.5 $spacing*3;
+                border: 1px solid $color-primary;
+                border-radius: $spacing;
+                transition: all ease-in-out .3s;
+                &:hover{
+                    color: $color-blue;
+                    border: 1px solid $color-blue;
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    img{
+        margin-right: -22vw;
+    }
+}
+
+
