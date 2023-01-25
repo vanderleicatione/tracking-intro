@@ -1,55 +1,54 @@
 <!DOCtype html>
 <html lang="pt-br">
+
 <head>
 	<title>Project Tracking Intro Component | Vanderlei Catione</title>
-	
-	<meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
-	<meta charset="utf-8">	
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-<head>
+	<meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="script.js"></script>
+
+</head>
+
 <body>
 	<header>
-		<a href=""><img src="images/logo.svg"></a>
+		<a href="#"><img src="images/logo.svg"></a>
 		<nav>
 			<ul>
-				<li><a href="">PRODUCT</a></li>
-				<li><a href="">FEATURES</a></li>
-				<li><a href="">PRICING</a></li>
-				<li class="ball"></li>
-				<li><a href="">LOGIN</a></li>
+				<li><a href="#">PRODUCT</a></li>
+				<li><a href="#">FEATURES</a></li>
+				<li><a href="#">PRICING</a></li>
+				<li class="ball">·</li>
+				<li><a href="#">LOGIN</a></li>
 			</ul>
 		</nav>
-		<div class="hamburguer"></div>
 	</header>
-	<section class="container">
-		<article class="content">
-			<h3><strong>New</strong> MONOGRAPH DASHBOARD</h3>
-			<h1>POWERFUL INSIGHTS INTO YOUR TEAM</h1>
-			<p>Project planning and time tracking for agile teams</p>
-			<div class="call">
-				<a class="button" href="">SCHEDULE A DEMO</a>
-				<p>TO SE A PREVIEW</p>
-			</div>
-		</article>
-		<article class="image">
-			<img src="images/illustration-devices.svg">
-		</article>
-	</section>
-	<script>
-		const hamburguer = document.querySelector('.hamburguer')
-		const nav_ul = document.querySelector('ul')
 
-		hamburguer.addEventListener('click',function(){
-			if(hamburguer.classList.contains('active')){
-				hamburguer.classList.remove('active')
-				nav_ul.classList.remove('active')
-			}
-			else{
-				hamburguer.classList.add('active')
-				nav_ul.classList.add('active')
-			}
-		})
-	</script>
+	<div class="container">
+		<section class="content">
+
+			<div class="title">
+				<span><strong>New</strong> monograph dashboard</span>
+				<h1>Powerful Insights Into Your Team</h1>
+			</div>
+
+			<p class="text">Project planning and time tracking for agile teams</p>
+
+			<div class="shchedule-button">
+				<a class="button" href="#">SCHEDULE A DEMO</a>
+				<p>To see a Preview</p>
+			</div>
+
+
+		</section>
+
+		<section class="bg-right">
+			<img src="images/illustration-devices.svg">
+		</section>
+	</div>
+
 </body>
+
 </hmtl>
